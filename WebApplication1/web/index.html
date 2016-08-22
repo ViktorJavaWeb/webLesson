@@ -12,41 +12,85 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <!-- div.wrapper>(div.header>(div.upHeader>(div.logo+div.adress)))+div.allCategories+(div.wrapBody>(div.product>div.futbolka1*6)+div.listing)+(div.footer>div.text+div.miniMenu)-->
+
         <div class="wrapper">
             <div class="header">
-                <div class="headerUp">
-                    <div class="logo"> 
-                        <a href="#"><img src="images/logo.png" alt="Home"></a> 
+                <div class="upHeader">
+                    <div class="logo">
+                        <a href="#"><img src="images/logo.png" alt="Home" title="Home"></a>
                     </div>
-                    <div class="adressCompan">
-                        <p>for additional information, contact us!</br>
-                            <a href="" class="info">info@memostra.com</a></p>
+                    <div class="adress"><p>for additional information, contact us!</p>
+                        <a href="#" class="adressMail">info@memostra.com</a>
                     </div>
-                     <div class="clearfix"></div>
+                    <div class="clearfix"></div>
                 </div>
-              
                 
-<!--                <div class="menu">
-                    <ul class="menuUl">
-                        <li>home</li>
-                        <li>about</li>
-                        <li>chothing</li>
-                        <li>shoes</li>
-                        <li>electronics</li>
-                        <li>perfumes</li>
-                        <li>contact us</li>
-                    </ul>
-                </div>-->
-                <div class="foto">
-                    <img src="images/banner.jpg" alt="foto">
+
+                <!-- (div.menu>ol.menu_ol>(li*7>a{home}))+div.foto-->
+                <div class="menu">
+                    <ol class="menu_ol">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                    </ol>
                 </div>
+                <div class="foto">
+                    
+                    <!--div.fotoText>h1{Welcom to Mostra!}+p{quality products - great prices!}+span{Check it Out!}-->
+                    <div class="fotoText">
+                        <h1>Welcom to Mostra!</h1>
+                        <p>quality products - great prices!</p>
+                        <span>Check it Out!</span>
+                    </div>
+                    
+                    
+                </div>
+               
             </div>
-            <div class="selectMenu"></div>
             
-            <div class="body"></div>
-            <div class="footere"></div>
-            <div></div>
+            <div class="allCategories">
+                
+               <!--(div.categories>ol>li*3>a{all})+forma>input-->
+               <div class="categories">
+                   <ol class="catOl">
+                       <li><a href="">all categories</a></li>
+                       <li><a href="">men</a></li>
+                       <li><a href="">women</a></li>
+                   </ol>
+               </div>
+               <forma><input type="text"></forma>
+               
+                
+                
+                
+                
+            </div>
+            
+            
+            <div class="wrapBody">
+                <div class="product">
+                    
+                    <!--div.futbolka*6>a{futbolka}>img-->
+                    <div class="futbolka"><a href="#">futbolka<img src="#" alt="futbolka"></a></div>
+                    <div class="futbolka"><a href="#">futbolka<img src="#" alt="futbolka"></a></div>
+                    <div class="futbolka"><a href="#">futbolka<img src="#" alt="futbolka"></a></div>
+                    <div class="futbolka"><a href="#">futbolka<img src="#" alt="futbolka"></a></div>
+                    <div class="futbolka"><a href="#">futbolka<img src="#" alt="futbolka"></a></div>
+                    <div class="futbolka"><a href="#">futbolka<img src="#" alt="futbolka"></a></div>
+                </div>
+                <div class="listing"></div>
+            </div>
+            <div class="footer">
+                <div class="text"></div>
+                <div class="miniMenu"></div>
+            </div>
         </div>
-        
+
+
     </body>
 </html>

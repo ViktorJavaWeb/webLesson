@@ -15,58 +15,144 @@ and open the template in the editor.
 .clearfix{
     clear: both;
 }
-.outline1, body, .wrapper, .header, .adressCompan, .logo, .headerUp, .menu, .menuUl li{
+.outline1, .wrapper,  .header, .upHeader, .adress, .wrapBody, .footer, 
+.catOl li{
     outline: 1px solid black;
+}
+
+body{
+   
 }
 
 .wrapper{
     width: 900px;
     height: 500px;
-    margin: auto;
-    background-color: azure;
-
-}
-.header{
-    width: 100%;
-    height: 100px;    
-}
-
-.headerUp{
-    height: 60px;
-   
-}
-
-.logo{
-    float: left;
+    margin: 10px auto 0;
     
 }
-.adressCompan {
-    float: right;
-    text-align: right;
-    height: 100%;
-    padding-top: 1%;
-}
 
-.info{
+.header{
+    width: 100%;
+    
+}
+.logo a{
+    display: inline-block;
+}
+.logo img{
+    display: block;
+}
+.logo{
+    float: left;
    
 }
-
-.menu{
-    background-color: cornflowerblue;
+.adress{
+    float: right;
+    text-align: right;
+    padding-top: 13px;  
+    font-size: 15px;
+    font-style: italic;
 }
-.menuUl{
 
+.adress p{
+    text-transform: capitalize;
 }
 
-.menuUl li{
+.adressMail a{
+    font-weight: bold;
+}
+
+/*.menu{
+   width: 100%;
+   
+}*/
+
+.menu_ol{
     list-style-type: none;
-    float: left;
-    padding: 5px 10px;
-    margin-left: 5%;
+    display: table-row;
+}
 
+
+.menu_ol li{    
+    background-color: cornflowerblue;
+    display: table-cell;
+   
+   
+}
+.menu_ol li a{
+    color: white;
+    display: table-cell;
+     width: 900px;
+     text-align: center;
+     padding: 10px 15px;
+    
+}
+.menu_ol li:hover{
+    background-color: blue;
+    
+}
+.menu_ol li:active{
+    background-color: blueviolet;
+}
+
+.adress p,a{
+    
 }
 
 .foto{
-
+    margin: 10px 0;
+    background-image: url(../images/banner.jpg);
+    height: 171px;
+}
+.fotoText{
+    text-align: right;
+    top: 10px;
     
+}
+.fotoText span{
+    background-color: gold;
+    padding: 5px 10px;
+    color: white;
+   
+}
+
+.allCategories{
+    margin-left: 10px;
+    
+}
+
+.catOl{
+    list-style-type: none;
+    display: table-row; 
+    margin: 5px 10px;
+}
+
+.catOl li{
+    
+    display: table-cell;
+    background-color: lightgray;
+    
+    
+}
+
+.catOl li a{
+    display: table-cell;
+    width: 100px;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+
+
+
+
+
+
+.wrapBody{
+    width: 100%;
+     
+}
+
+.footer{
+    width: 100%;
+    height: 150px;
 }
