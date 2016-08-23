@@ -16,7 +16,7 @@ and open the template in the editor.
     clear: both;
 }
 .outline1, .wrapper,  .header, .upHeader, .adress, .wrapBody, .footer, 
-.catOl li{
+.catOl li, .categories li{
     outline: 1px solid black;
 }
 
@@ -116,40 +116,38 @@ body{
 }
 
 .allCategories{
-    margin-left: 10px;
     
 }
 
-.catOl{
+.categories{
+    display: inline-block;
+    height: 100%;
+    
+}
+.categories li{
+    display: inline-block;
     list-style-type: none;
-    display: table-row; 
-    margin: 5px 10px;
-}
-
-.catOl li{
-    
-    display: table-cell;
-    background-color: lightgray;
-    
+    padding: 3px 15px;
+    background-color: gainsboro;
+    cursor: pointer;
     
 }
 
-.catOl li a{
-    display: table-cell;
-    width: 100px;
-    text-align: center;
+.categories li a{
+    text-decoration: none;
+    width: 100%;
     text-transform: capitalize;
-    
 }
-
-
+.input{
+    float: right;
+}
 
 
 
 
 .wrapBody{
     width: 100%;
-     
+    
 }
 
 .footer{
